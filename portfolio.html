@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Sontakke</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1f1c2c, #928dab); /* Cool gradient background */
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #4776e6, #8e54e9); /* Blue to purple gradient */
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            letter-spacing: 5px;
+            color: #fff;
+            text-transform: uppercase;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #f2f2f2;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #fff, 0 0 20px #4776e6, 0 0 30px #8e54e9, 0 0 40px #1f1c2c;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #4776e6, 0 0 40px #8e54e9, 0 0 50px #1f1c2c;
+            }
+        }
+
+        /* Container for Cards */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Card Styling */
+        .card {
+            background: rgba(255, 255, 255, 0.1); /* Translucent white background */
+            width: 280px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #f4f4f4;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card img {
+            width: 90px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #fff;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            color: #a3d5ff;
+            margin: 15px 0;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #e0e0e0;
+            line-height: 1.5;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .social-icons a img {
+            width: 35px;
+            height: 35px;
+            transition: transform 0.3s;
+            filter: grayscale(1);
+        }
+
+        .social-icons a:hover img {
+            transform: scale(1.2) rotate(10deg);
+            filter: grayscale(0);
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2f33;
+            padding: 20px;
+            text-align: center;
+            color: #a1a1a1;
+            font-size: 0.9em;
+            margin-top: 30px;
+        }
+
+        /* Skills Section */
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            color: #a3d5ff;
+        }
+
+        .skills ul li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Saksham Sontakke</h1>
+        <p>Computer Science Student | StartUp Enthusiast | Coding Enthusiast</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <div class="card">
+            
+            <h2>About Me</h2>
+            <p>Hello! I’m Saksham Sontakke, a B.Tech student in C.S and AI. I’m from Madhya Pradesh from there i had completed my schooling.I had a core intrest in robotics,coding and problem solving.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="card">
+            
+            <h2>Education</h2>
+            <p>B.Tech in Computer Science (AI) from NEWTON SCHOOL OF TECHNOLOGY - Ongoing</p>
+            <p>12th Grade - THE BALAGHAT PUBLIC SCHOOL, 2024</p>
+            <p>10th Grade - THE BALAGHAT ENGLISH HIGHER SECONDARY SCHOOL, 2022</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card">
+            
+            <h2>Skills</h2>
+            <div class="skills">
+                <ul>
+                    <li>HTML, CSS, </li>
+                    <li>Python</li>
+                    <li>Blender, video editing</li>
+                    <li>Leadership, Teamwork</li>
+                    <li>Robotics</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="card">
+            
+            <h2>Projects</h2>
+            <p>Working on real-world AI applications and web development projects.</p>
+            <a href="https://github.com/CyborgX-hash/Cab-Rental" target="_blank" style="color: #a3d5ff;">View on GitHub</a>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="card">
+            
+            <h2>Hobbies</h2>
+            
+                <p>Badminton</p>
+                <p>Travel</p>
+                <p>Videography</p>
+                
+            
+        </div>
+
+        <!-- Contact Section -->
+        <div class="card">
+            
+            <h2>Contact</h2>
+            <p>For any inquiries please reach out:</p>
+            <p>Email: <a href="mailto:sakshamsontakke713@gmail.com" style="color: #a3d5ff;">sakshamsontakke713@gmail.com</a></p>
+            <p>Phone: <a href="tel:+916264190838" style="color: #a3d5ff;">+91 6264190838</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/saksham-sontakke-85780927b/" target="_blank">Linkedin</a>
+                <a href="https://github.com/CyborgX-hash" target="_blank">Github</a>
+                <a href="https://www.instagram.com/its__saksham06/profilecard/?igsh=enZ1Mmw3cnZkemp"target="_blank">instagram</a>
+                
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>©️ 2024 Saksham Sontakke | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
